@@ -4,8 +4,8 @@ import compose from 'lodash.flowright';
 import { gql } from 'apollo-boost';
 import PropTypes from 'prop-types';
 import Loader from './Loader';
-
-import '../App.css';
+import Timeline from './Timeline';
+import Header from './Header';
 
 class Home extends Component {
   render() {
@@ -19,14 +19,8 @@ class Home extends Component {
 
     return (
       <React.Fragment>
-        <section className="section">
-          <div className="container">
-            <h1 className="title">Hello World</h1>
-            <p className="subtitle">
-              My first website with <strong>Bulma</strong>!
-            </p>
-          </div>
-        </section>
+        <Header />
+        <Timeline />
       </React.Fragment>
     );
   }

@@ -2,7 +2,12 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <div className="navbar" role="navigation" aria-label="main navigation">
+    <div
+      className="navbar"
+      style={{ backgroundColor: '#1f2424' }}
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="navbar-brand">
         <a className="navbar-item" href="https://avoltis.github.io/portfolio/">
           <img
