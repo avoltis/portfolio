@@ -4,10 +4,10 @@ import 'bulma-pageloader';
 export default function Loader() {
   return (
     <div
-      class="pageloader is-active"
+      className="pageloader is-active"
       // style={{ 'background-color': '#1f2424' }}
     >
-      <span class="title">loading</span>
+      <span className="title">loading</span>
     </div>
   );
 }
