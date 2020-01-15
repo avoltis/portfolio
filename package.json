@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.1.2",
     "apollo-boost": "^0.4.7",
     "bulma": "^0.8.0",
+    "bulma-pageloader": "^0.3.0",
     "bulmaswatch": "^0.7.5",
     "graphql": "^14.5.8",
     "lodash.flowright": "^3.5.0",
