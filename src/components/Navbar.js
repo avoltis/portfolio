@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <div
       className="navbar"
-      style={{ backgroundColor: '#1f2424' }}
+      style={{ backgroundColor: '#333C3D' }}
       role="navigation"
       aria-label="main navigation"
     >

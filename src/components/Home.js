@@ -3,9 +3,11 @@ import { graphql, withApollo } from 'react-apollo';
 import compose from 'lodash.flowright';
 import { gql } from 'apollo-boost';
 import PropTypes from 'prop-types';
+
+import Header from './Header';
 import Loader from './Loader';
 import Timeline from './Timeline';
-import Header from './Header';
+import Footer from './Footer';
 
 class Home extends Component {
   render() {
@@ -21,6 +23,7 @@ class Home extends Component {
       <React.Fragment>
         <Header />
         <Timeline />
+        <Footer />
       </React.Fragment>
     );
   }

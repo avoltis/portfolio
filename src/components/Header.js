@@ -2,12 +2,12 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <section className="section">
-      <div className="container">
-        <h1 className="title">Hello World</h1>
-        <p className="subtitle">
-          My first website with <strong>Bulma</strong>!
-        </p>
+    <section className="hero">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="title">Hero title</h1>
+          <h2 className="subtitle">Hero subtitle</h2>
+        </div>
       </div>
     </section>
   );
