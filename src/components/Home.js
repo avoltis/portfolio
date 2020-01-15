@@ -4,6 +4,7 @@ import compose from 'lodash.flowright';
 import { gql } from 'apollo-boost';
 import PropTypes from 'prop-types';
 import Loader from './Loader';
+
 import '../App.css';
 
 class Home extends Component {
@@ -17,14 +18,16 @@ class Home extends Component {
     console.log(portfolioQuery.getPortfolio);
 
     return (
-      <section className="section">
-        <div className="container">
-          <h1 className="title">Hello World</h1>
-          <p className="subtitle">
-            My first website with <strong>Bulma</strong>!
-          </p>
-        </div>
-      </section>
+      <React.Fragment>
+        <section className="section">
+          <div className="container">
+            <h1 className="title">Hello World</h1>
+            <p className="subtitle">
+              My first website with <strong>Bulma</strong>!
+            </p>
+          </div>
+        </section>
+      </React.Fragment>
     );
   }
 }
