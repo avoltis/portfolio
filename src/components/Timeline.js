@@ -77,7 +77,7 @@ export default function Timeline() {
             <div className="timeline-marker is-primary is-image is-32x32">
               <img
                 alt=""
-                src="http://bulma.io/images/placeholders/32x32.png"
+                src="https://bulma.io/images/placeholders/32x32.png"
               ></img>
             </div>
             <div className="timeline-content">
