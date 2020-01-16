@@ -3,45 +3,32 @@ import { graphql, withApollo } from 'react-apollo';
 import compose from 'lodash.flowright';
 import { gql } from 'apollo-boost';
 import PropTypes from 'prop-types';
-import logo from '../logo.svg';
-import '../App.css';
+
+import Header from '../components/Header';
+import Section from '../components/Section';
+import Loader from '../components/Loader';
+import Timeline from '../components/Timeline';
+import Education from '../components/Education';
+import Footer from '../components/Footer';
 
 class Home extends Component {
   render() {
     const { portfolioQuery } = this.props;
 
     if (portfolioQuery.loading) {
-      return (
-        <div>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            loading
-          </a>
-        </div>
-      );
+      return <Loader />;
     }
 
     console.log(portfolioQuery.getPortfolio);
 
     return (
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <React.Fragment>
+        <Header />
+        <Section />
+        <Timeline />
+        <Education />
+        <Footer />
+      </React.Fragment>
     );
   }
 }
