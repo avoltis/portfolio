@@ -4,12 +4,12 @@ import compose from 'lodash.flowright';
 import { gql } from 'apollo-boost';
 import PropTypes from 'prop-types';
 
-import Header from './Header';
-import Section from './Section';
-import Loader from './Loader';
-import Timeline from './Timeline';
-import Education from './Education';
-import Footer from './Footer';
+import Header from '../components/Header';
+import Section from '../components/Section';
+import Loader from '../components/Loader';
+import Timeline from '../components/Timeline';
+import Education from '../components/Education';
+import Footer from '../components/Footer';
 
 class Home extends Component {
   render() {

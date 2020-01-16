@@ -3,7 +3,7 @@ import './App.css';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
-import { HomeScreen } from './components/Home';
+import { HomeScreen } from './screens/Home';
 import Navbar from './components/Navbar';
 
 const client = new ApolloClient({
