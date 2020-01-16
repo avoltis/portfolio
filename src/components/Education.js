@@ -7,7 +7,10 @@ export default function Education() {
         <div className="media">
           <div className="media-left">
             <figure className="image is-48x48">
-              <img src="/img/graduation.svg" alt="graduation"></img>
+              <img
+                src={process.env.PUBLIC_URL + '/img/graduation.svg'}
+                alt="graduation"
+              ></img>
             </figure>
           </div>
           <div className="media-content">

@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="navbar-brand">
         <a className="navbar-item" href="https://avoltis.github.io/portfolio/">
           <img
-            src="/img/profile_pic.svg"
+            src={process.env.PUBLIC_URL + '/img/profile_pic.svg'}
             alt="logo"
             width="112"
             height="28"
@@ -25,13 +25,15 @@ export default function Navbar() {
             <div className="buttons">
               <a className="navbar-item" href="https://github.com/avoltis">
                 <img
-                  src="/icons/github-icon-inverted.png"
+                  src={
+                    process.env.PUBLIC_URL + '/icons/github-icon-inverted.png'
+                  }
                   alt="github link"
                 ></img>
               </a>
               <a className="navbar-item" href="mailto:v.agolli@live.com">
                 <img
-                  src="/icons/globe-contact.png"
+                  src={process.env.PUBLIC_URL + '/icons/globe-contact.png'}
                   alt="email link"
                 ></img>
               </a>
