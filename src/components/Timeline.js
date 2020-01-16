@@ -13,9 +13,67 @@ export default function Timeline() {
             <div className="timeline-content">
               <p className="heading">January 2016</p>
               <p>Timeline content - Can include any HTML element</p>
+
+              <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Technology
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      CSS
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Flexbox
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Web Design
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Open Source
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Community
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Documentation
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="timeline-item is-primary">
+          <div className="timeline-item is-primary is-rounded">
             <div className="timeline-marker is-primary is-image is-32x32">
               <img
                 alt=""
@@ -25,6 +83,64 @@ export default function Timeline() {
             <div className="timeline-content">
               <p className="heading">February 2016</p>
               <p>Timeline content - Can include any HTML element</p>
+
+              <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Technology
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      CSS
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Flexbox
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Web Design
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Open Source
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Community
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Documentation
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <header className="timeline-header">
@@ -37,6 +153,64 @@ export default function Timeline() {
             <div className="timeline-content">
               <p className="heading">March 2017</p>
               <p>Timeline content - Can include any HTML element</p>
+
+              <div class="field is-grouped is-grouped-multiline">
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Technology
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      CSS
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Flexbox
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Web Design
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Open Source
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Community
+                    </a>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a class="tag is-link is-rounded" href="www.example.com">
+                      Documentation
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <header className="timeline-header">

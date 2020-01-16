@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <div
+    <nav
       className="navbar"
       style={{ backgroundColor: '#333C3D' }}
       role="navigation"
@@ -23,16 +23,22 @@ export default function Navbar() {
         <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-primary" href="https://bulma.io">
-                <strong>Sign up</strong>
+              <a className="navbar-item" href="https://github.com/avoltis">
+                <img
+                  src="/icons/github-icon-inverted.png"
+                  alt="github link"
+                ></img>
               </a>
-              <a className="button is-light" href="https://bulma.io">
-                Log in
+              <a className="navbar-item" href="mailto:v.agolli@live.com">
+                <img
+                  src="/icons/globe-contact.png"
+                  alt="email link"
+                ></img>
               </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
