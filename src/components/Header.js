@@ -14,7 +14,7 @@ export default function Header() {
         <div className="container">
           <h1 className="title">Voltis Agolli</h1>
           <h2 className="subtitle">FullStack Dev, Wroclaw Poland</h2>
-          <h6 class="subtitle">Resume</h6>
+          <h6 className="subtitle">Resume</h6>
         </div>
       </div>
     </section>

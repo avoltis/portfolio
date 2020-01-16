@@ -5,8 +5,10 @@ import { gql } from 'apollo-boost';
 import PropTypes from 'prop-types';
 
 import Header from './Header';
+import Section from './Section';
 import Loader from './Loader';
 import Timeline from './Timeline';
+import Education from './Education';
 import Footer from './Footer';
 
 class Home extends Component {
@@ -22,16 +24,9 @@ class Home extends Component {
     return (
       <React.Fragment>
         <Header />
-        <section class="section">
-          <div class="container">
-            <h1 class="title">Section</h1>
-            <h2 class="subtitle">
-              A simple container to divide your page into{' '}
-              <strong>sections</strong>, like the one you're currently reading
-            </h2>
-          </div>
-        </section>
+        <Section />
         <Timeline />
+        <Education />
         <Footer />
       </React.Fragment>
     );

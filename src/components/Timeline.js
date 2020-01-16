@@ -14,58 +14,58 @@ export default function Timeline() {
               <p className="heading">January 2016</p>
               <p>Timeline content - Can include any HTML element</p>
 
-              <div class="field is-grouped is-grouped-multiline">
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+              <div className="field is-grouped is-grouped-multiline">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Technology
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       CSS
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Flexbox
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Web Design
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Open Source
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Community
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Documentation
                     </a>
                   </div>
@@ -84,58 +84,58 @@ export default function Timeline() {
               <p className="heading">February 2016</p>
               <p>Timeline content - Can include any HTML element</p>
 
-              <div class="field is-grouped is-grouped-multiline">
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+              <div className="field is-grouped is-grouped-multiline">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Technology
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       CSS
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Flexbox
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Web Design
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Open Source
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Community
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Documentation
                     </a>
                   </div>
@@ -154,58 +154,58 @@ export default function Timeline() {
               <p className="heading">March 2017</p>
               <p>Timeline content - Can include any HTML element</p>
 
-              <div class="field is-grouped is-grouped-multiline">
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+              <div className="field is-grouped is-grouped-multiline">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Technology
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       CSS
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Flexbox
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Web Design
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Open Source
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Community
                     </a>
                   </div>
                 </div>
 
-                <div class="control">
-                  <div class="tags has-addons">
-                    <a class="tag is-link is-rounded" href="www.example.com">
+                <div className="control">
+                  <div className="tags has-addons">
+                    <a className="tag is-link is-rounded" href="www.example.com">
                       Documentation
                     </a>
                   </div>
