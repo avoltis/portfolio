@@ -4,6 +4,7 @@ import compose from 'lodash.flowright';
 import { gql } from 'apollo-boost';
 import PropTypes from 'prop-types';
 
+import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Section from '../components/Section';
 import Loader from '../components/Loader';
@@ -21,13 +22,29 @@ class Home extends Component {
 
     console.log(portfolioQuery.getPortfolio);
 
+    const {
+      firstName,
+      lastName,
+      title,
+      address,
+      summary,
+      social,
+      experience,
+      education
+    } = portfolioQuery.getPortfolio;
+
     return (
       <React.Fragment>
-        <Header />
-        <Section />
-        <Timeline />
-        <Education />
-        <Footer />
+        <Navbar social={social} />
+        <Header
+          name={firstName + ' ' + lastName}
+          title={title}
+          address={address}
+        />
+        <Section summary={summary} />
+        <Timeline experience={experience} />
+        <Education education={education} />
+        <Footer social={social} />
       </React.Fragment>
     );
   }
@@ -48,6 +65,7 @@ const portfolioQuery = gql`
       social {
         github
         linkedIn
+        email
       }
       experience {
         company
@@ -58,6 +76,7 @@ const portfolioQuery = gql`
         present
         description
         address
+        skills
       }
       education {
         university
