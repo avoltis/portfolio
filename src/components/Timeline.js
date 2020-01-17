@@ -21,8 +21,8 @@ export default function Timeline({ experience }) {
         <br></br>
 
         <div className="timeline is-centered">
-          {experience.map(company => (
-            <>
+          {experience.map((company, index) => (
+            <React.Fragment key={index}>
               <header className="timeline-header">
                 <span className="tag is-primary">
                   {company.endDate || 'Current'}
@@ -36,18 +36,22 @@ export default function Timeline({ experience }) {
                   ></img>
                 </div>
                 <div className="timeline-content">
-                  <p className="heading has-text-primary">{company.company}</p>
+                  <div align={index % 2 === 0 ? 'left' : 'right'}>
+                    <p className="heading has-text-primary">
+                      {company.company}
+                    </p>
 
-                  {company.description && (
-                    <p className="subtitle">{company.description}</p>
-                  )}
-                  {company.address && (
-                    <p className="subtitle">{company.address}</p>
-                  )}
-
+                    {company.description && (
+                      <p className="subtitle">{company.description}</p>
+                    )}
+                    {company.address && (
+                      <p className="subtitle">{company.address}</p>
+                    )}
+                  </div>
+                  <br></br>
                   <div className="field is-grouped is-grouped-multiline">
-                    {company.skills.map(skill => (
-                      <div className="control">
+                    {company.skills.map((skill, skillIndex) => (
+                      <div className="control" key={skillIndex}>
                         <div className="tags has-addons">
                           <span className="tag is-link is-rounded">
                             {skill}
@@ -58,7 +62,7 @@ export default function Timeline({ experience }) {
                   </div>
                 </div>
               </div>
-            </>
+            </React.Fragment>
           ))}
 
           <header className="timeline-header">

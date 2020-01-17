@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Education() {
+export default function Education({ education }) {
   return (
     <div className="card">
       <div className="card-content">
@@ -16,46 +16,23 @@ export default function Education() {
                 </figure>
               </div>
               <div className="media-content">
-                <p className="title is-4">Education </p>
+                <p className="title is-4">Education</p>
                 <p className="subtitle is-6">#Training</p>
               </div>
             </div>
 
-            <div className="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec iaculis mauris. <a href="www.uni.com">@bulmaio</a>.
-              <a href="www.uni.com">#css</a>{' '}
-              <a href="www.uni.com">#responsive</a>
-              <br></br>
-              <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-            </div>
-
-            <div className="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec iaculis mauris. <a href="www.uni.com">@bulmaio</a>.
-              <a href="www.uni.com">#css</a>{' '}
-              <a href="www.uni.com">#responsive</a>
-              <br></br>
-              <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-            </div>
-
-            <div className="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec iaculis mauris. <a href="www.uni.com">@bulmaio</a>.
-              <a href="www.uni.com">#css</a>{' '}
-              <a href="www.uni.com">#responsive</a>
-              <br></br>
-              <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-            </div>
-
-            <div className="content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              nec iaculis mauris. <a href="www.uni.com">@bulmaio</a>.
-              <a href="www.uni.com">#css</a>{' '}
-              <a href="www.uni.com">#responsive</a>
-              <br></br>
-              <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-            </div>
+            {education.map((edu, eduIndex) => (
+              <div className="content" key={eduIndex}>
+                <span className="heading has-text-primary">
+                  {edu.university}
+                </span>
+                {edu.degree} in {edu.fieldOfStudy}
+                <br></br>
+                <span>
+                  {edu.startYear} - {edu.endYear} - {edu.address}
+                </span>
+              </div>
+            ))}
           </div>
         </section>
       </div>
