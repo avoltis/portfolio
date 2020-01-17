@@ -20,8 +20,6 @@ class Home extends Component {
       return <Loader />;
     }
 
-    console.log(portfolioQuery.getPortfolio);
-
     const {
       firstName,
       lastName,
