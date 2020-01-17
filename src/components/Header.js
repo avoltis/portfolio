@@ -7,7 +7,7 @@ export default function Header() {
         <img
           alt="profile pic"
           className="is-rounded"
-          src={process.env.PUBLIC_URL + '/img/profile_pic.svg'}
+          src={process.env.PUBLIC_URL + '/icons/profile-voltis.png'}
         />
       </figure>
       <div className="hero-body">

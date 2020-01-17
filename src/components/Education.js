@@ -15,7 +15,7 @@ export default function Education() {
           </div>
           <div className="media-content">
             <p className="title is-4">Education </p>
-            <p className="subtitle is-6">Studies</p>
+            <p className="subtitle is-6">#Training</p>
           </div>
         </div>
 

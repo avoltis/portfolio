@@ -4,6 +4,21 @@ export default function Timeline() {
   return (
     <section className="section">
       <div className="container">
+        <div className="media">
+          <div className="media-left">
+            <figure className="image is-48x48">
+              <img
+                src={process.env.PUBLIC_URL + '/img/atwork.svg'}
+                alt="graduation"
+              ></img>
+            </figure>
+          </div>
+          <div className="media-content">
+            <p className="title is-4">Experience</p>
+            <p className="subtitle is-6">#Dev</p>
+          </div>
+        </div>
+        <br></br>
         <div className="timeline is-centered">
           <header className="timeline-header">
             <span className="tag is-medium is-primary">Start</span>
@@ -17,7 +32,10 @@ export default function Timeline() {
               <div className="field is-grouped is-grouped-multiline">
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Technology
                     </a>
                   </div>
@@ -25,7 +43,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       CSS
                     </a>
                   </div>
@@ -33,7 +54,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Flexbox
                     </a>
                   </div>
@@ -41,7 +65,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Web Design
                     </a>
                   </div>
@@ -49,7 +76,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Open Source
                     </a>
                   </div>
@@ -57,7 +87,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Community
                     </a>
                   </div>
@@ -65,7 +98,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Documentation
                     </a>
                   </div>
@@ -87,7 +123,10 @@ export default function Timeline() {
               <div className="field is-grouped is-grouped-multiline">
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Technology
                     </a>
                   </div>
@@ -95,7 +134,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       CSS
                     </a>
                   </div>
@@ -103,7 +145,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Flexbox
                     </a>
                   </div>
@@ -111,7 +156,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Web Design
                     </a>
                   </div>
@@ -119,7 +167,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Open Source
                     </a>
                   </div>
@@ -127,7 +178,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Community
                     </a>
                   </div>
@@ -135,7 +189,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Documentation
                     </a>
                   </div>
@@ -157,7 +214,10 @@ export default function Timeline() {
               <div className="field is-grouped is-grouped-multiline">
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Technology
                     </a>
                   </div>
@@ -165,7 +225,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       CSS
                     </a>
                   </div>
@@ -173,7 +236,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Flexbox
                     </a>
                   </div>
@@ -181,7 +247,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Web Design
                     </a>
                   </div>
@@ -189,7 +258,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Open Source
                     </a>
                   </div>
@@ -197,7 +269,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Community
                     </a>
                   </div>
@@ -205,7 +280,10 @@ export default function Timeline() {
 
                 <div className="control">
                   <div className="tags has-addons">
-                    <a className="tag is-link is-rounded" href="www.example.com">
+                    <a
+                      className="tag is-link is-rounded"
+                      href="www.example.com"
+                    >
                       Documentation
                     </a>
                   </div>
