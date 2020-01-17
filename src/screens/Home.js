@@ -30,9 +30,7 @@ class Home extends Component {
       summary,
       social,
       experience,
-      education,
-      certifications,
-      skills
+      education
     } = portfolioQuery.getPortfolio;
 
     return (
@@ -44,9 +42,9 @@ class Home extends Component {
           address={address}
         />
         <Section summary={summary} />
-        <Timeline />
-        <Education />
-        <Footer />
+        <Timeline experience={experience} />
+        <Education education={education} />
+        <Footer social={social} />
       </React.Fragment>
     );
   }
@@ -78,6 +76,7 @@ const portfolioQuery = gql`
         present
         description
         address
+        skills
       }
       education {
         university
