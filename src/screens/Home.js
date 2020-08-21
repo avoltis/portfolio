@@ -75,6 +75,7 @@ const portfolioQuery = gql`
         description
         address
         skills
+        image
       }
       education {
         university
