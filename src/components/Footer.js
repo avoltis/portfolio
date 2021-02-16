@@ -1,11 +1,11 @@
-import React from 'react';
-export default function Footer() {
+import React from "react";
+export default function Footer({ social: { email } }) {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
         <p>
-          <strong>Portfolio</strong> by{' '}
-          <a href="https://github.com/avoltis">Voltis Agolli</a>
+          <strong>Portfolio</strong> by{" "}
+          <a href={"mailto:" + email}>Voltis Agolli</a>
           {/* . The source code is
           licensed
           <a href="http://opensource.org/licenses/mit-license.php"> MIT</a>. The

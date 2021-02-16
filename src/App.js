@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.css';
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from 'react-apollo';
+import React from "react";
+import "./App.css";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
 
-import { HomeScreen } from './screens/Home';
+import { HomeScreen } from "./screens/Home";
 
 const client = new ApolloClient({
-  uri: 'https://portfolio-graphql-voltis.herokuapp.com/'
+  uri: "https://portfolio-graphql-voltis.herokuapp.com/",
 });
 
 function App() {

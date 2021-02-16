@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
-export default function Header({ name, title, address }) {
+export default function Header({ name, title, address, resume }) {
   return (
     <section className="hero">
       <figure className="image container is-128x128">
         <img
           alt="profile pic"
           className="is-rounded"
-          src={process.env.PUBLIC_URL + '/icons/profile-voltis.png'}
+          src={process.env.PUBLIC_URL + "/icons/profile-voltis.png"}
         />
       </figure>
       <div className="hero-body">
@@ -16,7 +16,11 @@ export default function Header({ name, title, address }) {
           <h2 className="subtitle">
             {title}, {address}
           </h2>
-          <h6 className="subtitle">Resume</h6>
+          <h6>
+            <a href={resume}>
+              <strong>RESUME</strong>
+            </a>
+          </h6>
         </div>
       </div>
     </section>
