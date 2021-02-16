@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Education({ education }) {
   return (
@@ -10,7 +10,7 @@ export default function Education({ education }) {
               <div className="media-left">
                 <figure className="image is-48x48">
                   <img
-                    src={process.env.PUBLIC_URL + '/img/graduation.svg'}
+                    src={process.env.PUBLIC_URL + "/img/graduation.svg"}
                     alt="graduation"
                   ></img>
                 </figure>

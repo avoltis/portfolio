@@ -1,55 +1,53 @@
-import React, { Component } from 'react';
-import { graphql, withApollo } from 'react-apollo';
-import compose from 'lodash.flowright';
-import { gql } from 'apollo-boost';
-import PropTypes from 'prop-types';
+import React from "react";
+import { graphql, withApollo } from "react-apollo";
+import compose from "lodash.flowright";
+import { gql } from "apollo-boost";
+import PropTypes from "prop-types";
 
-import Navbar from '../components/Navbar';
-import Header from '../components/Header';
-import Section from '../components/Section';
-import Loader from '../components/Loader';
-import Timeline from '../components/Timeline';
-import Education from '../components/Education';
-import Footer from '../components/Footer';
+import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import Section from "../components/Section";
+import Loader from "../components/Loader";
+import Timeline from "../components/Timeline";
+import Education from "../components/Education";
+import Footer from "../components/Footer";
 
-class Home extends Component {
-  render() {
-    const { portfolioQuery } = this.props;
-
-    if (portfolioQuery.loading) {
-      return <Loader />;
-    }
-
-    const {
-      firstName,
-      lastName,
-      title,
-      address,
-      summary,
-      social,
-      experience,
-      education
-    } = portfolioQuery.getPortfolio;
-
-    return (
-      <React.Fragment>
-        <Navbar social={social} />
-        <Header
-          name={firstName + ' ' + lastName}
-          title={title}
-          address={address}
-        />
-        <Section summary={summary} />
-        <Timeline experience={experience} />
-        <Education education={education} />
-        <Footer social={social} />
-      </React.Fragment>
-    );
+const Home = ({ portfolioQuery }) => {
+  if (portfolioQuery.loading) {
+    return <Loader />;
   }
-}
+
+  const {
+    firstName,
+    lastName,
+    title,
+    address,
+    summary,
+    social,
+    experience,
+    education,
+    resume,
+  } = portfolioQuery.getPortfolio;
+
+  return (
+    <React.Fragment>
+      <Navbar resume={resume} social={social} />
+      <Header
+        name={firstName + " " + lastName}
+        title={title}
+        address={address}
+        resume={resume}
+      />
+      <Section summary={summary} />
+      <Timeline experience={experience} />
+      <Education education={education} />
+      <Footer social={social} />
+    </React.Fragment>
+  );
+};
 
 Home.propTypes = {
-  portfolioQuery: PropTypes.object
+  portfolioQuery: PropTypes.object,
 };
 
 const portfolioQuery = gql`
@@ -60,6 +58,7 @@ const portfolioQuery = gql`
       title
       address
       summary
+      resume
       social {
         github
         linkedIn
@@ -104,5 +103,5 @@ const portfolioQuery = gql`
 
 export const HomeScreen = compose(
   withApollo,
-  graphql(portfolioQuery, { name: 'portfolioQuery' })
+  graphql(portfolioQuery, { name: "portfolioQuery" })
 )(Home);

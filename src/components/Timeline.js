@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 export default function Timeline({ experience }) {
   return (
@@ -8,7 +8,7 @@ export default function Timeline({ experience }) {
           <div className="media-left">
             <figure className="image is-48x48">
               <img
-                src={process.env.PUBLIC_URL + '/img/atwork.svg'}
+                src={process.env.PUBLIC_URL + "/img/atwork.svg"}
                 alt="graduation"
               ></img>
             </figure>
@@ -25,18 +25,15 @@ export default function Timeline({ experience }) {
             <React.Fragment key={index}>
               <header className="timeline-header">
                 <span className="tag is-primary">
-                  {company.endDate || 'Current'}
+                  {company.endDate || "Current"}
                 </span>
               </header>
               <div className="timeline-item is-primary">
                 <div className="timeline-marker is-primary is-image is-32x32">
-                  <img
-                    alt=""
-                    src={company.image}
-                  ></img>
+                  <img alt="" src={company.image}></img>
                 </div>
                 <div className="timeline-content">
-                  <div align={index % 2 === 0 ? 'left' : 'right'}>
+                  <div align={index % 2 === 0 ? "left" : "right"}>
                     <p className="heading has-text-primary">
                       {company.company}
                     </p>
