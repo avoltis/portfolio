@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Section({ summary }) {
   return (
@@ -10,3 +11,11 @@ export default function Section({ summary }) {
     </section>
   );
 }
+
+Section.propTypes = {
+  summary: PropTypes.string,
+};
+
+Section.defaultProps = {
+  summary: "",
+};

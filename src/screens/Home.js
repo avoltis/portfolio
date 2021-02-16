@@ -50,6 +50,10 @@ Home.propTypes = {
   portfolioQuery: PropTypes.object,
 };
 
+Home.defaultProps = {
+  portfolioQuery: {},
+};
+
 const portfolioQuery = gql`
   query portfolioQuery {
     getPortfolio {

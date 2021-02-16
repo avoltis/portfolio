@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Timeline({ experience }) {
   return (
@@ -70,3 +71,11 @@ export default function Timeline({ experience }) {
     </section>
   );
 }
+
+Timeline.propTypes = {
+  experience: PropTypes.arrayOf(PropTypes.object),
+};
+
+Timeline.defaultProps = {
+  experience: [],
+};

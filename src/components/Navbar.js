@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Navbar({ social: { email, github }, resume }) {
   return (
@@ -44,3 +45,21 @@ export default function Navbar({ social: { email, github }, resume }) {
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  social: PropTypes.shape({
+    email: PropTypes.string,
+    github: PropTypes.string,
+    linkedIn: PropTypes.string,
+  }),
+  resume: PropTypes.string,
+};
+
+Navbar.defaultProps = {
+  social: {
+    email: "",
+    linkedIn: "",
+    github: "",
+  },
+  resume: "",
+};

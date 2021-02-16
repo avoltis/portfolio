@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 export default function Footer({ social: { email } }) {
   return (
     <footer className="footer">
@@ -19,3 +21,19 @@ export default function Footer({ social: { email } }) {
     </footer>
   );
 }
+
+Footer.propTypes = {
+  social: PropTypes.shape({
+    email: PropTypes.string,
+    github: PropTypes.string,
+    linkedIn: PropTypes.string,
+  }),
+};
+
+Footer.defaultProps = {
+  social: {
+    email: "",
+    linkedIn: "",
+    github: "",
+  },
+};
