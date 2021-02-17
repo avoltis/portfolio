@@ -1,9 +1,9 @@
-const themeOptions = {
+export const themeOptions = {
   light: "light",
   dark: "dark",
 };
 
-const styles = {
+export const styles = {
   united: "https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css",
   darkly: process.env.PUBLIC_URL + "/styles/darkly.css",
   nuclear: "https://jenil.github.io/bulmaswatch/nuclear/bulmaswatch.min.css",
@@ -17,12 +17,6 @@ const styles = {
   yeti: "https://jenil.github.io/bulmaswatch/yeti/bulmaswatch.min.css",
 };
 
-const apollo_config = {
+export const apollo_config = {
   uri: "https://portfolio-graphql-voltis.herokuapp.com/",
-};
-
-module.exports = {
-  themeOptions,
-  styles,
-  apollo_config,
 };

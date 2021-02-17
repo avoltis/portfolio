@@ -5,7 +5,8 @@ import { ApolloProvider } from "react-apollo";
 
 import { HomeScreen } from "./screens/Home";
 import { ThemeContext } from "./context/theme";
-import { themeOptions, styles, apollo_config } from "./config";
+import { themeOptions, apollo_config, styles } from "./config";
+
 const client = new ApolloClient({
   uri: apollo_config.uri,
 });
