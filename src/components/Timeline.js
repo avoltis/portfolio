@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../node_modules/bulma-timeline/dist/css/bulma-timeline.min.css";
 
 export default function Timeline({ experience }) {
   return (
