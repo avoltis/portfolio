@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Header({ name, title, address, resume }) {
   return (
@@ -26,3 +27,17 @@ export default function Header({ name, title, address, resume }) {
     </section>
   );
 }
+
+Header.propTypes = {
+  name: PropTypes.string,
+  title: PropTypes.string,
+  address: PropTypes.string,
+  resume: PropTypes.string,
+};
+
+Header.defaultProps = {
+  name: "",
+  title: "",
+  address: "",
+  resume: "",
+};

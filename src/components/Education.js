@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function Education({ education }) {
   return (
@@ -39,3 +40,11 @@ export default function Education({ education }) {
     </div>
   );
 }
+
+Education.propTypes = {
+  education: PropTypes.arrayOf(PropTypes.object),
+};
+
+Education.defaultProps = {
+  education: [],
+};
