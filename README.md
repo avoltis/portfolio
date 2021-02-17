@@ -2,7 +2,6 @@
 
 A simple, responsive, single-page portfolio and resume for developers built with React, GraphQl, Bulma and Undraw.
 
-
 View the [demo here](https://avoltis.github.io/portfolio/).
 
 ### API and graphQL Middle-layer
@@ -17,6 +16,10 @@ https://github.com/avoltis/voltis-portfolio-graphql
 Make sure you run:
 `npm install`
 `npm start`
+
+## Deploy to github pages
+
+`npm run deploy`
 
 ## Contact
 
