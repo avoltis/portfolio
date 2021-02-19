@@ -20,17 +20,21 @@ function App() {
     setTheme(data);
   };
 
+  const [stylesLoaded, onStylesUpdate] = useState(false);
+  const onStyleLoad = () => onStylesUpdate(true);
+
   return (
     <ApolloProvider client={client}>
       <ThemeContext.Provider value={{ theme, setTheme: setThemeValue }}>
         <link
           rel="stylesheet"
           type="text/css"
+          onLoad={onStyleLoad}
           href={theme === themeOptions.dark ? styles.darkly : styles.united}
         />
 
         <div className="App">
-          <HomeScreen />
+          <HomeScreen stylesLoaded={stylesLoaded} />
         </div>
       </ThemeContext.Provider>
     </ApolloProvider>

@@ -12,9 +12,21 @@ import Timeline from "../components/Timeline";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 
-const Home = ({ portfolioQuery }) => {
+import portfolio from "../portfolio.json";
+
+const Home = ({ portfolioQuery, stylesLoaded }) => {
+  let portfolioData = {};
   if (portfolioQuery.loading) {
+    portfolioData = portfolio; //getting the json locally to have faster 1st load time on website (free website :p)
+    // return <Loader />;
+  }
+
+  if (!stylesLoaded) {
     return <Loader />;
+  }
+
+  if (!portfolioQuery.loading) {
+    portfolioData = portfolioQuery.getPortfolio;
   }
 
   const {
@@ -27,7 +39,7 @@ const Home = ({ portfolioQuery }) => {
     experience,
     education,
     resume,
-  } = portfolioQuery.getPortfolio;
+  } = portfolioData;
 
   return (
     <React.Fragment>
@@ -48,10 +60,12 @@ const Home = ({ portfolioQuery }) => {
 
 Home.propTypes = {
   portfolioQuery: PropTypes.object,
+  stylesLoaded: PropTypes.bool,
 };
 
 Home.defaultProps = {
   portfolioQuery: {},
+  stylesLoaded: false,
 };
 
 const portfolioQuery = gql`
