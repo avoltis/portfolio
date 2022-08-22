@@ -4,7 +4,7 @@ export const themeOptions = {
 };
 
 export const styles = {
-  united: "https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css",
+  //   united: "https://jenil.github.io/bulmaswatch/united/bulmaswatch.min.css",
   darkly: process.env.PUBLIC_URL + "/styles/darkly.css",
   nuclear: "https://jenil.github.io/bulmaswatch/nuclear/bulmaswatch.min.css",
   flatly: "https://jenil.github.io/bulmaswatch/flatly/bulmaswatch.min.css",

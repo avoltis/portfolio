@@ -1,9 +1,5 @@
 import React from "react";
-import { graphql, withApollo } from "react-apollo";
-import compose from "lodash.flowright";
-import { gql } from "apollo-boost";
-import PropTypes from "prop-types";
-
+import { useQuery, gql } from "@apollo/client";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Section from "../components/Section";
@@ -12,8 +8,10 @@ import Timeline from "../components/Timeline";
 import Education from "../components/Education";
 import Footer from "../components/Footer";
 
-const Home = ({ portfolioQuery }) => {
-  if (portfolioQuery.loading) {
+const Home = () => {
+  const { loading, error, data } = useQuery(portfolioQuery);
+
+  if (!error & loading && !(data && !!data?.getPortfolio)) {
     return <Loader />;
   }
 
@@ -27,7 +25,7 @@ const Home = ({ portfolioQuery }) => {
     experience,
     education,
     resume,
-  } = portfolioQuery.getPortfolio;
+  } = data.getPortfolio;
 
   return (
     <React.Fragment>
@@ -44,14 +42,6 @@ const Home = ({ portfolioQuery }) => {
       <Footer social={social} />
     </React.Fragment>
   );
-};
-
-Home.propTypes = {
-  portfolioQuery: PropTypes.object,
-};
-
-Home.defaultProps = {
-  portfolioQuery: {},
 };
 
 const portfolioQuery = gql`
@@ -105,7 +95,4 @@ const portfolioQuery = gql`
   }
 `;
 
-export const HomeScreen = compose(
-  withApollo,
-  graphql(portfolioQuery, { name: "portfolioQuery" })
-)(Home);
+export const HomeScreen = Home;
