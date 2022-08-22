@@ -2,7 +2,7 @@
 
 A simple, responsive, single-page portfolio and resume for developers built with React, GraphQl, Bulma and Undraw.
 
-View the [demo voltis.dev](https://voltis.dev/).
+View the demo here: voltis.dev
 
 ### API and graphQL Middle-layer
 
