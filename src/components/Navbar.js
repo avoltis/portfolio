@@ -23,15 +23,17 @@ export default function Navbar({ social: { email, github }, resume }) {
     >
       <div className="navbar-brand">
         <a className="navbar-item" onClick={onThemeChange}>
-          <input
-            id="themingSwitch"
-            type="checkbox"
-            name="themingSwitch"
-            className="switch is-thin"
-            checked={theme === themeOptions.dark ? "checked" : ""}
-            onChange={() => {}}
-          />
-          <label>{theme === themeOptions.dark ? "Light" : "Dark"}</label>
+          <div className="field">
+            <input
+              id="themingSwitch"
+              type="checkbox"
+              name="themingSwitch"
+              className="switch"
+              checked={theme === themeOptions.dark ? "checked" : ""}
+              onChange={() => {}}
+            />
+            <label>{theme === themeOptions.dark ? "Light" : "Dark"}</label>
+          </div>
         </a>
       </div>
 
