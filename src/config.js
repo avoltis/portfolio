@@ -18,5 +18,5 @@ export const styles = {
 };
 
 export const apollo_config = {
-  uri: "https://portfolio-graphql-voltis.herokuapp.com/",
+  uri: "https://portfolio-voltis-dev-graphql.herokuapp.com/",
 };
