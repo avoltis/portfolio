@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import ApolloClient from "apollo-boost";
-import { ApolloProvider } from "react-apollo";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
 import { HomeScreen } from "./screens/Home";
 import { ThemeContext } from "./context/theme";
@@ -9,6 +8,7 @@ import { themeOptions, apollo_config, styles } from "./config";
 
 const client = new ApolloClient({
   uri: apollo_config.uri,
+  cache: new InMemoryCache(),
 });
 
 function App() {
