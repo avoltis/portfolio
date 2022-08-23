@@ -1,9 +1,6 @@
 import React from "react";
-import { graphql, withApollo } from "react-apollo";
-import compose from "lodash.flowright";
-import { gql } from "apollo-boost";
+import { useQuery, gql } from "@apollo/client";
 import PropTypes from "prop-types";
-
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Section from "../components/Section";
@@ -14,20 +11,22 @@ import Footer from "../components/Footer";
 
 import portfolio from "../portfolio.json";
 
-const Home = ({ portfolioQuery, stylesLoaded }) => {
-  let portfolioData = {};
-  if (portfolioQuery.loading) {
-    portfolioData = portfolio; //getting the json locally to have faster 1st load time on website (free website :p)
-    // return <Loader />;
-  }
+const Home = ({ stylesLoaded }) => {
+  //   const { loading, error, data } = useQuery(portfolioQuery);
+
+  let portfolioData = portfolio; //getting the json locally to have faster 1st load time on website (free website :p)
 
   if (!stylesLoaded) {
     return <Loader />;
   }
 
-  if (!portfolioQuery.loading) {
-    portfolioData = portfolioQuery.getPortfolio;
-  }
+  //   if (!error & loading && !(data && !!data?.getPortfolio)) {
+  //     return <Loader />;
+  //   }
+
+  //   if (!portfolioQuery?.loading) {
+  //     portfolioData = portfolioQuery.getPortfolio;
+  //   }
 
   const {
     firstName,
@@ -59,12 +58,10 @@ const Home = ({ portfolioQuery, stylesLoaded }) => {
 };
 
 Home.propTypes = {
-  portfolioQuery: PropTypes.object,
   stylesLoaded: PropTypes.bool,
 };
 
 Home.defaultProps = {
-  portfolioQuery: {},
   stylesLoaded: false,
 };
 
@@ -119,7 +116,4 @@ const portfolioQuery = gql`
   }
 `;
 
-export const HomeScreen = compose(
-  withApollo,
-  graphql(portfolioQuery, { name: "portfolioQuery" })
-)(Home);
+export const HomeScreen = Home;
