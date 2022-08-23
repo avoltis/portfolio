@@ -115,6 +115,7 @@ const portfolioQuery = gql`
       skills
       topSkills
       languages
+      hobbies
     }
   }
 `;
