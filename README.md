@@ -26,3 +26,8 @@ Make sure you run:
 v.agolli@live.com
 
 ## MIT license - Please include permission notice
+
+
+![alt mobile](https://raw.githubusercontent.com/avoltis/voltis-portfolio-api/master/images/mobile.jpeg)
+
+![alt web](https://raw.githubusercontent.com/avoltis/voltis-portfolio-api/master/images/web.png)
