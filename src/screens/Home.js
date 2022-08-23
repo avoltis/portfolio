@@ -7,6 +7,7 @@ import Section from "../components/Section";
 import Loader from "../components/Loader";
 import Timeline from "../components/Timeline";
 import Education from "../components/Education";
+import Hobbies from "../components/Hobbies";
 import Footer from "../components/Footer";
 
 import portfolio from "../portfolio.json";
@@ -38,6 +39,7 @@ const Home = ({ stylesLoaded }) => {
     experience,
     education,
     resume,
+    hobbies,
   } = portfolioData;
 
   return (
@@ -52,6 +54,7 @@ const Home = ({ stylesLoaded }) => {
       <Section summary={summary} />
       <Timeline experience={experience} />
       <Education education={education} />
+      <Hobbies hobbies={hobbies} />
       <Footer social={social} />
     </React.Fragment>
   );
