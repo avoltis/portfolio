@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "../../node_modules/bulma-switch/dist/css/bulma-switch.min.css";
-import { themeOptions } from "../config.js";
+import { themeOptions } from "../config.tsx";
 import { useTheme } from "../context/theme";
 
 export default function Navbar({ social: { email, github }, resume }) {

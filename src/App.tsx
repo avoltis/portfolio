@@ -15,7 +15,7 @@ function App() {
   const existingTheme = localStorage.getItem("theme");
   const [theme, setTheme] = useState(existingTheme || themeOptions.dark);
 
-  const setThemeValue = (data) => {
+  const setThemeValue = (data: string) => {
     localStorage.setItem("theme", data);
     setTheme(data);
   };

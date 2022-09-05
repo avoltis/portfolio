@@ -1,6 +1,4 @@
-import React from "react";
 import { useQuery, gql } from "@apollo/client";
-import PropTypes from "prop-types";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import Section from "../components/Section";
@@ -12,7 +10,7 @@ import Footer from "../components/Footer";
 
 import portfolio from "../portfolio.json";
 
-const Home = ({ stylesLoaded }) => {
+const Home = ({ stylesLoaded }: screenProps) => {
   //   const { loading, error, data } = useQuery(portfolioQuery);
 
   let portfolioData = portfolio; //getting the json locally to have faster 1st load time on website (free website :p)
@@ -43,7 +41,7 @@ const Home = ({ stylesLoaded }) => {
   } = portfolioData;
 
   return (
-    <React.Fragment>
+    <>
       <Navbar resume={resume} social={social} />
       <Header
         name={firstName + " " + lastName}
@@ -56,16 +54,8 @@ const Home = ({ stylesLoaded }) => {
       <Education education={education} />
       <Hobbies hobbies={hobbies} />
       <Footer social={social} />
-    </React.Fragment>
+    </>
   );
-};
-
-Home.propTypes = {
-  stylesLoaded: PropTypes.bool,
-};
-
-Home.defaultProps = {
-  stylesLoaded: false,
 };
 
 const portfolioQuery = gql`
@@ -119,5 +109,9 @@ const portfolioQuery = gql`
     }
   }
 `;
+
+type screenProps = {
+  stylesLoaded: boolean;
+};
 
 export const HomeScreen = Home;
