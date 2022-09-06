@@ -1,7 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { portfolio } from "../types";
 
-export default function Section({ summary }) {
+export default function Section({ summary }: screenProps) {
   return (
     <section className="section">
       <div className="container">
@@ -12,10 +11,6 @@ export default function Section({ summary }) {
   );
 }
 
-Section.propTypes = {
-  summary: PropTypes.string,
-};
-
-Section.defaultProps = {
-  summary: "",
+type screenProps = {
+  summary: portfolio["summary"];
 };

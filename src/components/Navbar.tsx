@@ -1,10 +1,12 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { portfolio } from "../types";
 import "../../node_modules/bulma-switch/dist/css/bulma-switch.min.css";
-import { themeOptions } from "../config.tsx";
+import { themeOptions } from "../config";
 import { useTheme } from "../context/theme";
 
-export default function Navbar({ social: { email, github }, resume }) {
+export default function Navbar({
+  social: { email, github },
+  resume,
+}: screenProps) {
   const { theme, setTheme } = useTheme();
   const onThemeChange = () => {
     if (theme === themeOptions.dark) {
@@ -29,7 +31,7 @@ export default function Navbar({ social: { email, github }, resume }) {
               type="checkbox"
               name="themingSwitch"
               className="switch"
-              checked={theme === themeOptions.dark ? "checked" : ""}
+              checked={theme === themeOptions.dark}
               onChange={() => {}}
             />
             <label>{theme === themeOptions.dark ? "Light" : "Dark"}</label>
@@ -63,20 +65,7 @@ export default function Navbar({ social: { email, github }, resume }) {
   );
 }
 
-Navbar.propTypes = {
-  social: PropTypes.shape({
-    email: PropTypes.string,
-    github: PropTypes.string,
-    linkedIn: PropTypes.string,
-  }),
-  resume: PropTypes.string,
-};
-
-Navbar.defaultProps = {
-  social: {
-    email: "",
-    linkedIn: "",
-    github: "",
-  },
-  resume: "",
+type screenProps = {
+  social: portfolio["social"];
+  resume: portfolio["resume"];
 };

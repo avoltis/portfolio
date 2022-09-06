@@ -1,4 +1,3 @@
-import React from "react";
 import "bulma-pageloader";
 
 export default function Loader() {

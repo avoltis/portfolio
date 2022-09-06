@@ -1,4 +1,4 @@
-import { education } from "../types";
+import { portfolio } from "../types";
 
 export default function Education({ education }: screenProps) {
   return (
@@ -41,5 +41,5 @@ export default function Education({ education }: screenProps) {
 }
 
 type screenProps = {
-  education: education[];
+  education: portfolio["education"];
 };

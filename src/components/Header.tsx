@@ -1,7 +1,4 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-export default function Header({ name, title, address, resume }) {
+export default function Header({ name, title, address, resume }: screenProps) {
   return (
     <section className="hero">
       <figure className="image container is-128x128">
@@ -28,16 +25,9 @@ export default function Header({ name, title, address, resume }) {
   );
 }
 
-Header.propTypes = {
-  name: PropTypes.string,
-  title: PropTypes.string,
-  address: PropTypes.string,
-  resume: PropTypes.string,
-};
-
-Header.defaultProps = {
-  name: "",
-  title: "",
-  address: "",
-  resume: "",
+type screenProps = {
+  name: string;
+  title: string;
+  address: string;
+  resume: string;
 };

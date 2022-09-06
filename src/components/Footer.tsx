@@ -1,7 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { portfolio } from "../types";
 
-export default function Footer({ social: { email } }) {
+export default function Footer({ social: { email } }: screenProps) {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
@@ -22,18 +21,6 @@ export default function Footer({ social: { email } }) {
   );
 }
 
-Footer.propTypes = {
-  social: PropTypes.shape({
-    email: PropTypes.string,
-    github: PropTypes.string,
-    linkedIn: PropTypes.string,
-  }),
-};
-
-Footer.defaultProps = {
-  social: {
-    email: "",
-    linkedIn: "",
-    github: "",
-  },
+type screenProps = {
+  social: portfolio["social"];
 };
