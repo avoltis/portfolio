@@ -30,7 +30,11 @@ const Home = ({ stylesLoaded }) => {
   //   }
 
 
-  
+
+
+
+//   voltis
+
   const {
     firstName,
     lastName,
