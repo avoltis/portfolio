@@ -29,6 +29,8 @@ const Home = ({ stylesLoaded }) => {
   //     portfolioData = portfolioQuery.getPortfolio;
   //   }
 
+
+  
   const {
     firstName,
     lastName,
