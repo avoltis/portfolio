@@ -27,6 +27,12 @@ const Home = ({ stylesLoaded }: screenProps) => {
   //     portfolioData = portfolioQuery.getPortfolio;
   //   }
 
+
+
+
+
+//   voltis
+
   const {
     firstName,
     lastName,
