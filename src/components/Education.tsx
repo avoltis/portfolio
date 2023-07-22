@@ -1,7 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { portfolio } from "../types";
 
-export default function Education({ education }) {
+export default function Education({ education }: screenProps) {
   return (
     <div className="card">
       <div className="card-content">
@@ -41,10 +40,6 @@ export default function Education({ education }) {
   );
 }
 
-Education.propTypes = {
-  education: PropTypes.arrayOf(PropTypes.object),
-};
-
-Education.defaultProps = {
-  education: [],
+type screenProps = {
+  education: portfolio["education"];
 };

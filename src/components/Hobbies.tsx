@@ -1,7 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { portfolio } from "../types";
 
-export default function Hobbies({ hobbies }) {
+export default function Hobbies({ hobbies }: screenProps) {
   return (
     <div className="card">
       <div className="card-content">
@@ -29,10 +28,6 @@ export default function Hobbies({ hobbies }) {
   );
 }
 
-Hobbies.propTypes = {
-  hobbies: PropTypes.string,
-};
-
-Hobbies.defaultProps = {
-  hobbies: "",
+type screenProps = {
+  hobbies: portfolio["hobbies"];
 };

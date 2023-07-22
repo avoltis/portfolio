@@ -1,8 +1,8 @@
 import React from "react";
-import PropTypes from "prop-types";
 import "../../node_modules/bulma-timeline/dist/css/bulma-timeline.min.css";
+import { portfolio } from "../types";
 
-export default function Timeline({ experience }) {
+export default function Timeline({ experience }: screenProps) {
   return (
     <section className="section">
       <div className="container">
@@ -23,7 +23,7 @@ export default function Timeline({ experience }) {
         <br></br>
 
         <div className="timeline is-centered">
-          {experience.map((company, index) => (
+          {experience.map((company, index: number) => (
             <React.Fragment key={index}>
               <header className="timeline-header">
                 <span className="tag is-primary">
@@ -35,7 +35,9 @@ export default function Timeline({ experience }) {
                   <img alt="" src={company.image}></img>
                 </div>
                 <div className="timeline-content">
-                  <div align={index % 2 === 0 ? "left" : "right"}>
+                  <div
+                    style={{ textAlign: index % 2 === 0 ? "left" : "right" }}
+                  >
                     <p className="heading has-text-primary">
                       {company.company}
                     </p>
@@ -73,10 +75,6 @@ export default function Timeline({ experience }) {
   );
 }
 
-Timeline.propTypes = {
-  experience: PropTypes.arrayOf(PropTypes.object),
-};
-
-Timeline.defaultProps = {
-  experience: [],
+type screenProps = {
+  experience: portfolio["experience"];
 };
