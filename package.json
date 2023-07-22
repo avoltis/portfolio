@@ -16,7 +16,7 @@
     "bulma-timeline": "^3.0.4",
     "graphql": "^16.6.0",
     "lodash.flowright": "^3.5.0",
-    "node-sass": "^7.0.1",
+    "node-sass": "^9.0.0",
     "prop-types": "^15.7.2",
     "react": "^18.2.0",
     "react-bulma-components": "^4.1.0",
