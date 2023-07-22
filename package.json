@@ -3,6 +3,7 @@
   "homepage": "https://voltis.dev",
   "version": "0.1.0",
   "private": true,
+  "license": "(MIT OR Apache-2.0)",
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
