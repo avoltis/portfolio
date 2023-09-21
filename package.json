@@ -14,7 +14,7 @@
     "bulma-pageloader": "^0.3.0",
     "bulma-switch": "^2.0.0",
     "bulma-timeline": "^3.0.4",
-    "graphql": "^16.6.0",
+    "graphql": "^16.8.1",
     "lodash.flowright": "^3.5.0",
     "node-sass": "^9.0.0",
     "prop-types": "^15.7.2",
